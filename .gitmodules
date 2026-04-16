@@ -1,3 +1,6 @@
 [submodule "rustdesk-server"]
 	path = rustdesk-server
 	url = https://github.com/bins-dev/rustdesk-server.git
+[submodule "rustdesk"]
+	path = rustdesk
+	url = https://github.com/bins-dev/rustdesk.git
