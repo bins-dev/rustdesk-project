@@ -10,3 +10,6 @@
 [submodule "rustdesk-web"]
 	path = rustdesk-web
 	url = https://github.com/bins-dev/rustdesk-web.git
+[submodule "hbb-common"]
+	path = hbb-common
+	url = https://github.com/bins-dev/hbb-common.git

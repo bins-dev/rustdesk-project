@@ -1,0 +1,11 @@
+#!/bin/bash
+REPO_NAME=hbb-common
+DEFAULT_BRANCH=main
+cd ${REPO_NAME}
+if ! git remote | grep -q "^${REPO_NAME}\$"; then
+	git remote add ${REPO_NAME} https://github.com/rustdesk/hbb_common.git
+fi
+git pull ${REPO_NAME} ${DEFAULT_BRANCH}
+git push origin ${DEFAULT_BRANCH}
+git fetch ${REPO_NAME} --tags ${DEFAULT_BRANCH}
+git push origin ${DEFAULT_BRANCH} --tags
