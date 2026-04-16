@@ -1,0 +1,10 @@
+#!/bin/bash
+REPO_NAME=rustdesk-api
+cd ${REPO_NAME}
+if ! git remote | grep -q "^${REPO_NAME}\$"; then
+	git remote add ${REPO_NAME} https://github.com/lejianwen/rustdesk-api.git
+fi
+git pull ${REPO_NAME} master
+git push origin master
+git fetch ${REPO_NAME} --tags master
+git push origin master --tags
